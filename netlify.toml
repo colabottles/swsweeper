@@ -1,3 +1,9 @@
 [build]
-  command = "astro build"
+  command = "npm run build"
   publish = "src"
+  base = "/"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
