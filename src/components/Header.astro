@@ -5,16 +5,21 @@ import HeaderLink from "./HeaderLink.astro";
 
 <header>
   <nav>
-    <h2><a href="/">{SITE_TITLE}</a></h2>
+    <a href="/"
+      ><img
+        id="swsweeper_logo"
+        src="/src/assets/swsweeper2.png"
+        alt="The Southwest Sweeper Sales logo. A cactus and four small suns."
+      /></a
+    >
     <div class="internal-links">
       <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/products">Products</HeaderLink>
-      <HeaderLink href="/parts">Parts</HeaderLink>
-      <HeaderLink href="/services">Services</HeaderLink>
+      <HeaderLink href="/brands">Our Brands</HeaderLink>
+      <HeaderLink href="/parts-service">Parts &amp; Service</HeaderLink>
+      <HeaderLink href="/services">Our Services</HeaderLink>
       <HeaderLink href="/rentals">Rentals</HeaderLink>
-      <HeaderLink href="/inventory">Inventory</HeaderLink>
-      <HeaderLink href="/about">About</HeaderLink>
-      <HeaderLink href="/news">News</HeaderLink>
+      <HeaderLink href="/inventory">Current Inventory</HeaderLink>
+      <HeaderLink href="/about">Company</HeaderLink>
       <HeaderLink href="/contact">Contact</HeaderLink>
     </div>
     <div class="tele">
@@ -41,11 +46,11 @@ import HeaderLink from "./HeaderLink.astro";
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   nav a {
     padding: 1em 0.5em;
-    color: var(--black);
+    color: var(--link);
     border-bottom: 4px solid transparent;
     text-decoration: none;
   }
@@ -53,11 +58,26 @@ import HeaderLink from "./HeaderLink.astro";
     text-decoration: none;
     border-bottom-color: var(--accent);
   }
+
+  nav a:hover {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom-color: var(--accent);
+  }
+
+  img#swsweeper_logo {
+    text-decoration: none;
+    border-bottom-color: var(--accent);
+  }
+
+  div.internal-links a {
+    border-bottom: 3px solid (--white);
+  }
   .tele,
   .tele a {
     display: flex;
     padding: 5px 10px;
-    background-color: #28a745;
+    background-color: var(--accent-dark);
     color: white;
     text-decoration: none;
     border-radius: 5px;

@@ -12,9 +12,40 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
   </head>
   <body>
     <Header />
-    <main>
-      <h1>Serving the Arizona valley since 1975</h1>
-      <p>Welcome to the official Southwest Sweeper Sales website.</p>
+    <main class="basePage">
+      <h1>Southwest Sweeper Sales</h1>
+      <p>Serving the Arizona valley since 1975</p>
+      <img
+        src="/src/assets/nitehawk.png"
+        alt="A street sweeper in a parking lot."
+        id="homeHero"
+      />
+      <section id="sweeper_cat">
+        <div class="sm_pic_container">
+          <img
+            src="/src/assets/stsweeper.png"
+            alt="Street sweepers."
+            id="streetSweep"
+          />
+          <p>Street Sweepers</p>
+        </div>
+        <div class="sm_pic_container">
+          <img
+            src="/src/assets/lotsweep.webp"
+            alt="Parking lot sweepers."
+            id="parkingLotSweep"
+          />
+          <p>Parking Lot Sweepers</p>
+        </div>
+        <div class="sm_pic_container">
+          <img
+            src="/src/assets/indsweep.png"
+            alt="Industrial sweepers and scrubbers."
+            id="industrialSweep"
+          />
+          <p>Industrial Sweepers &amp; Scrubbers</p>
+        </div>
+      </section>
     </main>
     <Footer />
   </body>
