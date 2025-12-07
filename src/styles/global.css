@@ -21,23 +21,23 @@
 }
 
 @font-face {
-  font-family: "Atkinson";
-  src: url("/fonts/atkinson-regular.woff") format("woff");
+  font-family: "InterRegular";
+  src: url("/fonts/inter-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Atkinson";
-  src: url("/fonts/atkinson-bold.woff") format("woff");
-  font-weight: 700;
+  font-family: "UnnaBold";
+  src: url("/fonts/unna-bold.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: "Atkinson", sans-serif;
+  font-family: "InterRegular", sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--bodybg-main);
@@ -64,6 +64,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "UnnaBold", sans-serif;
   margin: 0 0 0.5rem 0;
   color: rgb(var(--black));
   line-height: 1.2;
@@ -162,19 +163,33 @@ img#homeHero {
   align-items: center;
 }
 
-img#swsweeper_logo {
+img.swsweeper_logo {
   aspect-ratio: 2 / 1;
-  min-height: 100%;
-  min-width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.basePage h1 {
+  text-align: center;
 }
 
 section#sweeper_cat {
   margin: 2em 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
   gap: 4px;
+}
+
+#sweeper_cat a {
+  color: var(--link-dark);
+  text-decoration: none;
+}
+
+#sweeper_cat a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
 }
 
 img#streetSweep,
@@ -182,6 +197,20 @@ img#parkingLotSweep,
 img#industrialSweep {
   max-width: 330px;
   max-height: 330px;
+}
+
+#logos ul {
+  display: flex;
+  align-items: end;
+}
+
+#logos li {
+  list-style-type: none;
+  margin-right: 2em;
+}
+
+img.product-logo {
+  max-width: 200px;
 }
 
 .sm_pic_container {
@@ -207,8 +236,62 @@ img#industrialSweep {
 }
 
 .tricol {
-  display: subgrid;
-  grid-columns: 3 / 1;
+  column-count: 3;
+}
+
+section.rental_table h2 {
+  text-align: center;
+}
+
+.rental_table {
+  overflow: auto;
+  width: 100%;
+}
+
+.rental_table table {
+  border: 1px solid rgb(var(--black));
+  height: 100%;
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  text-align: left;
+}
+
+.rental_table caption {
+  caption-side: top;
+  text-align: center;
+  font-weight: 800;
+}
+
+.rental_table th {
+  border: 1px solid rgb(var(--black));
+  background-color: #eceff1;
+  color: rgb(var(--black));
+  padding: 5px;
+}
+
+.rental_table td {
+  border: 1px solid rgb(var(--black));
+  padding: 5px;
+}
+
+.rental_table tr:nth-child(even) td {
+  background-color: var(--accent);
+  color: rgb(var(--black));
+}
+
+.rental_table tr:nth-child(odd) td {
+  background-color: var(--accent-dark);
+  color: rgb(var(--black));
+}
+
+table.rentals {
+  margin: 1em 0;
+}
+
+.footnotes {
+  font-size: 1rem;
 }
 
 @media (max-width: 720px) {
