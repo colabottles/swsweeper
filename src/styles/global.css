@@ -294,6 +294,35 @@ table.rentals {
   font-size: 1rem;
 }
 
+/*
+ * Form styling
+ */
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input,
+textarea {
+  margin-bottom: 1em;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+button {
+  padding: 1rem;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+textarea {
+  height: 25vh;
+}
+
+
 @media (max-width: 720px) {
   body {
     font-size: 18px;
