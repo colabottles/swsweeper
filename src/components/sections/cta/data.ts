@@ -4,26 +4,26 @@ import svg3 from "./assets/green-3.svg?raw";
 import svg4 from "./assets/green-4.svg?raw";
 
 export const getInvolvedSection = {
-  title: "Get Involved",
+  title: "Employment",
   subheading1_1: "Join Us ",
-  subheading1_2: "in Building a Sustainable Future",
+  subheading1_2: "as an Employee at Southwest Sweeper Sales",
   initiatives: [
     {
-      title: "Community Outreach",
+      title: "Day Porter",
       description:
-        "Discover our community initiatives aimed at promoting awareness and education on sustainable living. Join us in creating a positive impact together.",
+        "Job Description.",
       visual: svg2,
     },
     {
-      title: "Green Events",
+      title: "Mechanic",
       description:
-        "Participate in our upcoming green events. From tree-planting drives to eco-friendly workshops, be a part of the movement towards a healthier planet.",
+        "Job Description.",
       visual: svg4,
     },
     {
-      title: "Partnerships for Sustainability",
+      title: "Assistant Office Administrator",
       description:
-        "Explore our partnerships with organizations dedicated to environmental conservation. Learn how you can contribute to sustainable practices through collaboration.",
+        "Job Description.",
       visual: svg3,
     },
   ],

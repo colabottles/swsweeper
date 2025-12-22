@@ -1,6 +1,6 @@
 ---
 import { Image, Picture } from "astro:assets";
-import heroImg from "./assets/wind3.jpg";
+import heroImg from "./assets/bortek.jpg";
 import CtaButton from "../../shared/CtaButton.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle from "../../shared/SubTitle.astro";
@@ -8,14 +8,14 @@ import Title from "../../shared/Title.astro";
 import LazyImage from "../../shared/LazyImage.astro";
 
 const heroSection = {
-  headline1: "Powering",
-  headline2: "Tomorrow,",
-  headline3: "Sustainably",
-  headline4: "Today!",
-  subheading1: "Join us in the green energy revolution",
-  subheading2: "and be part of a sustainable future",
-  subheading3: "for generations to come.",
-  buttonText: "Get Powered Today!",
+  headline1: "Serving the",
+  headline2: "Arizona Valley",
+  headline3: "Since",
+  headline4: "1975!",
+  subheading1: "Our parts department stocks a complete inventory of parts and equipment",
+  subheading2: "Our service department has a full time staff of mechanics",
+  subheading3: "Inventory is always revolving, please call to ask what we currently have in stock.",
+  buttonText: "Contact Us Today!",
   backgroundImage: "hero-background-image.jpg",
 };
 
@@ -53,7 +53,7 @@ const { className = "" } = Astro.props;
       <div class="flex relative pt-10 md:p-0">
         <LazyImage
           src={heroImg}
-          alt="A picture of a wind turbine."
+          alt="A picture of a street sweeper."
           className="w-full h-full object-cover"
         />
         <svg

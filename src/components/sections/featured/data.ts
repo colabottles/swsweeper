@@ -4,28 +4,28 @@ import img3 from "./assets/amazonas2.png";
 
 export const projectsSection = {
   title: "Featured Projects",
-  subheading1_1: "Explore Our Successful ",
-  subheading1_2: "Green Energy Endeavors",
+  subheading1_1: "Some of Our Largest Projects ",
+  subheading1_2: "From Anthem to Queen Creek",
   projects: [
     {
-      title: "Solar-Powered Community",
+      title: "Desert Ridge",
       description:
-        "Empowering a community with sustainable solar energy solutions. Learn how [Company Name] brought clean and affordable electricity to homes, schools, and businesses.",
-      location: "Los Angeles, California, USA",
+        "Blurb about the project(s) and property.",
+      location: "Scottsdale, AZ",
       visual: img1,
     },
     {
-      title: "Wind Farm Innovation",
+      title: "Bigger Project",
       description:
-        "Revolutionizing wind energy with our innovative wind farm. Discover how [Company Name] is harnessing the power of the wind to create a greener and more sustainable future.",
-      location: "Scottish Highlands, United Kingdom",
+        "Blurb about the project(s) and property.",
+      location: "Phoenix, AZ",
       visual: img2,
     },
     {
-      title: "Hydropower Plant Success",
+      title: "Largest Project",
       description:
-        "A journey into our hydropower success story. Explore how [Company Name] transforms the energy of flowing water into a reliable and eco-friendly power source.",
-      location: "Amazon Rainforest, South America",
+        "Blurb about the project(s) and property.",
+      location: "Surprise, AZ",
       visual: img3,
     },
   ],

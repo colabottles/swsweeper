@@ -5,12 +5,12 @@ import img3 from "./assets/person3.png";
 export const testimonialsSection = {
   title: "What Our Customers Say",
   subheading1_1: "Hear from Those",
-  subheading1_2: " Who Have Embraced Sustainable Living",
+  subheading1_2: " Who Have Employed Our Services",
   testimonials: [
     {
       name: "Emily Johnson",
       visual: img1,
-      occupation: "Homeowner",
+      occupation: "Property Owner",
       quote:
         "Switching to [Company Name] was the best decision I made. Our home is now powered by clean energy, and I feel great knowing I'm contributing to a healthier planet.",
     },
@@ -24,7 +24,7 @@ export const testimonialsSection = {
     {
       name: "Sophie Chen",
       visual: img3,
-      occupation: "Environmental Advocate",
+      occupation: "Property Manager",
       quote:
         "I'm passionate about the environment, and [Company Name] aligns perfectly with my values. Their commitment to renewable energy and reducing carbon footprint is commendable.",
     },

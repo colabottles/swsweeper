@@ -3,7 +3,7 @@ import imgSolar from "./assets/inno-panel.webp";
 import imgWind from "./assets/inno-wind.webp";
 
 export const innovationsSection = {
-  title: "Latest Innovations",
+  title: "Our Brands",
   subheading1_1: "Discover Our Cutting-edge",
   subheading1_2: " Green Energy Technologies",
   innovations: [
