@@ -1,0 +1,30 @@
+---
+const today = new Date();
+---
+
+<footer>
+  &copy; {today.getFullYear()} Southwest Sweeper Sales. All rights reserved. <a
+    href="tel:6026780496">Call Now</a
+  >
+  <style>
+    footer {
+      padding: 2em 1em 6em 1em;
+      background: linear-gradient(var(--gray-gradient)) no-repeat;
+      color: rgb(var(--gray));
+      text-align: center;
+    }
+    footer {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 1em;
+    }
+    footer a {
+      text-decoration: none;
+      color: var(--black);
+    }
+    footer a:hover {
+      color: var(--link-dark);
+    }
+  </style>
+</footer>
