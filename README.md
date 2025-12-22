@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌱 Green Energy Astro Template
 
 A modern, responsive website template for green energy companies built with Astro and TailwindCSS. This template provides a complete solution for renewable energy businesses to showcase their services, innovations, and environmental impact.
@@ -6,9 +5,6 @@ A modern, responsive website template for green energy companies built with Astr
 ## 🚀 Demo
 
 **[🔗 View Live Demo](https://energy-template.vbartalis.dev/)** - **[Mirror](https://vbartalis.github.io/energy-template/)**
-
-
-
 
 **[🎨 Get Template on Astro](https://astro.build/themes/details/energy-company-template/)**
 
