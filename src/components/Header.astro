@@ -4,24 +4,25 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header>
+  <a href="/">
+    <img
+      class="swsweeper_logo"
+      src="/images/swsweeper.png"
+      alt="The Southwest Sweeper Sales logo. A cactus and four small suns."
+    />
+  </a>
+
   <nav>
-    <a href="/"
-      ><img
-        id="swsweeper_logo"
-        src="/src/assets/swsweeper2.png"
-        alt="The Southwest Sweeper Sales logo. A cactus and four small suns."
-      /></a
-    >
     <div class="internal-links">
       <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/brands">Our Brands</HeaderLink>
-      <HeaderLink href="/parts-service">Parts &amp; Service</HeaderLink>
-      <HeaderLink href="/services">Our Services</HeaderLink>
+      <HeaderLink href="/parts-service">Parts &amp; Services</HeaderLink>
+      <HeaderLink href="/services">Maintenance</HeaderLink>
       <HeaderLink href="/rentals">Rentals</HeaderLink>
-      <HeaderLink href="/inventory">Current Inventory</HeaderLink>
+      <HeaderLink href="/inventory">Inventory</HeaderLink>
       <HeaderLink href="/company">Company</HeaderLink>
       <HeaderLink href="/contact">Contact</HeaderLink>
     </div>
+
     <div class="tele">
       <a href="tel:6026780496">Call Now</a>
     </div>
@@ -29,8 +30,9 @@ import HeaderLink from "./HeaderLink.astro";
 </header>
 <style>
   header {
+    display: flex;
     margin: 0;
-    padding: 0 1em;
+    padding: 1em;
     background-color: var(--headerbg-main);
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
   }
@@ -43,8 +45,14 @@ import HeaderLink from "./HeaderLink.astro";
   h2 a.active {
     text-decoration: none;
   }
+
+  .swsweeper_logo {
+    display: flex;
+  }
   nav {
     display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
     align-items: center;
     justify-content: space-around;
   }
@@ -61,11 +69,6 @@ import HeaderLink from "./HeaderLink.astro";
 
   nav a:hover {
     color: var(--white);
-    text-decoration: none;
-    border-bottom-color: var(--accent);
-  }
-
-  img#swsweeper_logo {
     text-decoration: none;
     border-bottom-color: var(--accent);
   }

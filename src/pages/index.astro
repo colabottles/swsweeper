@@ -1,4 +1,59 @@
 ---
+<<<<<<< HEAD
+import CustomerTestimonials from "../components/sections/testimonials/CustomerTestimonials.astro";
+import EnvironmentalImpact from "../components/sections/environment/EnvironmentalImpact.astro";
+import FeaturedProjects from "../components/sections/featured/FeaturedProjects.astro";
+import GetInvolved from "../components/sections/cta/GetInvolved.astro";
+import Hero from "../components/sections/hero/Hero.astro";
+import KeyServices from "../components/sections/services/KeyServices.astro";
+import LatestInnovations from "../components/sections/innovations/LatestInnovations.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to the Agency template ">
+  <main class="flex flex-col gap-y-20 md:gap-y-40 overflow-hidden">
+    <!-- Hero Section: -->
+    <!-- High-quality image or animation of renewable energy sources. -->
+    <!-- Headline and subheading centered on the page. -->
+    <Hero />
+
+    <KeyServices />
+    <!-- Key Services Overview: -->
+    <!-- Provide a brief overview of your main green energy services. -->
+    <!-- Use engaging visuals and concise text to highlight the benefits. -->
+    <!-- Include a call-to-action button leading to detailed service information. -->
+
+    <LatestInnovations />
+    <!-- Latest Innovations: -->
+    <!-- Highlight any recent advancements or innovations in your green energy solutions. -->
+    <!-- Use images and concise descriptions to showcase your commitment to cutting-edge technology. -->
+    <!-- Emphasize how staying with your company means staying at the forefront of green energy. -->
+
+    <CustomerTestimonials />
+    <!-- Customer Testimonials: -->
+    <!-- Share testimonials from satisfied customers. -->
+    <!-- Include photos, names, and brief quotes to build trust. -->
+    <!-- Place a call-to-action to encourage users to explore more customer stories. -->
+    <EnvironmentalImpact />
+    <!-- Environmental Impact: -->
+    <!-- Showcase the positive impact users can make by choosing your services. -->
+    <!-- Use statistics, infographics, or visuals to illustrate the environmental benefits. -->
+    <!-- Emphasize the role your company plays in promoting sustainability. -->
+
+    <FeaturedProjects />
+    <!-- Featured Projects or Case Studies: -->
+    <!-- Showcase successful green energy projects your company has undertaken. -->
+    <!-- Provide details on the impact and success of these projects. -->
+    <!-- Encourage users to explore more about your company's achievements. -->
+
+    <GetInvolved />
+    <!-- Get Involved Section: -->
+    <!-- Invite users to actively participate or learn more about sustainability. -->
+    <!-- Provide information on community initiatives, events, or partnerships. -->
+    <!-- Include a call-to-action for users to join your community or subscribe to updates. -->
+  </main>
+</Layout>
+=======
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
@@ -13,40 +68,61 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
   <body>
     <Header />
     <main class="basePage">
-      <h1>Southwest Sweeper Sales</h1>
-      <p>Serving the Arizona valley since 1975</p>
+      <h1>Serving the Arizona valley since 1975</h1>
       <img
-        src="/src/assets/nitehawk.png"
+        src="/images/nitehawk.png"
         alt="A street sweeper in a parking lot."
         id="homeHero"
       />
       <section id="sweeper_cat">
-        <div class="sm_pic_container">
-          <img
-            src="/src/assets/stsweeper.png"
-            alt="Street sweepers."
-            id="streetSweep"
-          />
-          <p>Street Sweepers</p>
-        </div>
-        <div class="sm_pic_container">
-          <img
-            src="/src/assets/lotsweep.webp"
-            alt="Parking lot sweepers."
-            id="parkingLotSweep"
-          />
-          <p>Parking Lot Sweepers</p>
-        </div>
-        <div class="sm_pic_container">
-          <img
-            src="/src/assets/indsweep.png"
-            alt="Industrial sweepers and scrubbers."
-            id="industrialSweep"
-          />
-          <p>Industrial Sweepers &amp; Scrubbers</p>
-        </div>
+        <a href="/street-sweepers">Street Sweepers</a>
+        <a href="/parking-lot-sweepers">Parking Lot Sweepers</a>
+        <a href="/industrial-sweepers-scrubbers"
+          >Industrial Sweepers &amp; Scrubbers</a
+        >
+      </section>
+
+      <section id="logos">
+        <ul>
+          <li>
+            <img
+              src="/images/bucher-municipal.png"
+              alt="Bucher Municipal Logo"
+              class="product-logo"
+            />
+          </li>
+          <li>
+            <img
+              src="/images/powerboss.png"
+              alt="PowerBoss Logo"
+              class="product-logo"
+            />
+          </li>
+          <li>
+            <img
+              src="/images/skavinjer.png"
+              alt="Sakvinjer Logo"
+              class="product-logo"
+            />
+          </li>
+          <li>
+            <img
+              src="/images/victory-sweepers.png"
+              alt="Victory Sweepers Logo"
+              class="product-logo"
+            />
+          </li>
+          <li>
+            <img
+              src="/images/rssequipment.png"
+              alt="RSS Equipment Logo"
+              class="product-logo"
+            />
+          </li>
+        </ul>
       </section>
     </main>
     <Footer />
   </body>
 </html>
+>>>>>>> fcb02746200fb67f133bf9bf4407084ba5154c70
