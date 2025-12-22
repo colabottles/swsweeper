@@ -1,0 +1,95 @@
+---
+import { SITE_TITLE } from "../consts";
+import HeaderLink from "./HeaderLink.astro";
+---
+
+<header>
+  <a href="/">
+    <img
+      class="swsweeper_logo"
+      src="/images/swsweeper.png"
+      alt="The Southwest Sweeper Sales logo. A cactus and four small suns."
+    />
+  </a>
+
+  <nav>
+    <div class="internal-links">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/parts-service">Parts &amp; Services</HeaderLink>
+      <HeaderLink href="/services">Maintenance</HeaderLink>
+      <HeaderLink href="/rentals">Rentals</HeaderLink>
+      <HeaderLink href="/inventory">Inventory</HeaderLink>
+      <HeaderLink href="/company">Company</HeaderLink>
+      <HeaderLink href="/contact">Contact</HeaderLink>
+    </div>
+
+    <div class="tele">
+      <a href="tel:6026780496">Call Now</a>
+    </div>
+  </nav>
+</header>
+<style>
+  header {
+    display: flex;
+    margin: 0;
+    padding: 1em;
+    background-color: var(--headerbg-main);
+    box-shadow: 0 2px 8px rgba(var(--black), 5%);
+  }
+  h2 {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  h2 a,
+  h2 a.active {
+    text-decoration: none;
+  }
+
+  .swsweeper_logo {
+    display: flex;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+  nav a {
+    padding: 1em 0.5em;
+    color: var(--link);
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+  }
+  nav a.active {
+    text-decoration: none;
+    border-bottom-color: var(--accent);
+  }
+
+  nav a:hover {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom-color: var(--accent);
+  }
+
+  div.internal-links a {
+    border-bottom: 3px solid (--white);
+  }
+  .tele,
+  .tele a {
+    display: flex;
+    padding: 5px 10px;
+    background-color: var(--accent-dark);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    line-height: 1;
+    margin-top: 4px;
+  }
+  @media (max-width: 720px) {
+    .tele {
+      display: none;
+    }
+  }
+</style>
